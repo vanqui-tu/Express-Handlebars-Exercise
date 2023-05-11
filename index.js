@@ -20,6 +20,8 @@ app.get("/", (req, res) => {
 
 app.use("/task1", require("./routes/task1Route.js"));
 app.use("/task3", require("./routes/task3Route.js"));
+app.use("/task4", require("./routes/task4Route.js"));
+app.use("/task4-details", require("./routes/task4-detailsRoute.js"));
 
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
